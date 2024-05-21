@@ -37,7 +37,7 @@ export default function Home() {
             exit="hidden"
             className='max-w-sm sm:max-w-md md:max-w-lg xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-black dark:text-white/60'
           >
-            A skilled front-end developer with extensive experience in JavaScript, and I specialize in frameworks like React.js and Next.js. My expertise lies in delivering high-quality, optimized code that caters to clients' needs and exceeds their expectations.
+            A skilled front-end developer with extensive experience in JavaScript, and I specialize in frameworks like React.js and Next.js. My expertise lies in delivering high-quality, optimized code that caters to clients' needs and exceeds their expectations.teko
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative mb-10'>
