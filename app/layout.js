@@ -1,4 +1,3 @@
-// RootLayout.jsx
 "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -11,11 +10,11 @@ import { ThemeProvider } from "./_components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
-  const router = usePathname();
+  const pathname = usePathname();
 
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body  suppressHydrationWarning={true} className={inter.className}>
+      <body suppressHydrationWarning={true} className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -24,7 +23,7 @@ export default function RootLayout({ children }) {
         >
           <Layout>
             <AnimatePresence mode='wait'>
-              <motion.div key={router} className='h-full'>
+              <motion.div key={pathname} className='h-full'>
                 <Transition />
                 {children}
               </motion.div>
