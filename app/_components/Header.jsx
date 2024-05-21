@@ -1,7 +1,7 @@
 'use client'
 
-// import Image from 'next/image';
-// import Link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link';
 import Socials from '../_components/Socials';
 import { ModeToggle } from './toggleMenu';
 import { useTheme } from 'next-themes';
@@ -22,22 +22,22 @@ const Header = () => {
   return (
     <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8'>
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-y-3 pt-3'>
           {/* logo */}
-          {/* <Link href={'/'}>
+          <Link href={'/'}>
             <Image
               src={theme === 'dark' || resolvedTheme === 'dark' ? '/logolight.png' : '/logodark.png'}
-              width={190}
-              height={70}
+              width={150}
+              height={60}
               alt='Logo'
               priority={true}
             />
-          </Link> */}
+          </Link>
           <div className='flex items-center gap-x-2'>
             {/* socials */}
             <Socials />
             {/* mode toggle */}
-            <div className='absolute right-[20px] top-20 md:relative md:right-0 md:top-0 md:px-3 lg:static lg:px-0 lg:right-0 lg:top-0'>
+            <div className='absolute right-[13px] top-6 sm:px-5 sm:static sm:right-0 sm:top-0'>
               <ModeToggle />
             </div>
           </div>
