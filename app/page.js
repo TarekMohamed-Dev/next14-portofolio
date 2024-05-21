@@ -57,7 +57,7 @@ export default function Home() {
       {/* image */}
       <div className="w-full h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <div className='bg-wh dark:bg-explosion xl:bg-cover bg-center xl:bg-right bg-no-repeat w-full h-full absolute dark:mix-blend-color-dodge translate-z-0'>
+        <div className='bg-wh dark:bg-explosion bg-cover bg-center xl:bg-right bg-no-repeat w-full h-full absolute dark:mix-blend-color-dodge translate-z-0'>
         </div>
         {/* particles */}
         <ParticlesContainer />
