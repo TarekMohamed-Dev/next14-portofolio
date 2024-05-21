@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'
 import Image from 'next/image'
 
@@ -11,7 +12,6 @@ import { motion } from 'framer-motion'
 
 // variants
 import { fadeIn } from '../variants'
-
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
             exit="hidden"
             className='max-w-sm sm:max-w-md md:max-w-lg xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-black dark:text-white/60'
           >
-            A skilled front-end developer with extensive experience in JavaScript, and I specialize in frameworks like React.js and Next.js. My expertise lies in delivering high-quality, optimized code that caters to clients' needs and exceeds their expectations.tekothttjhg
+            A skilled front-end developer with extensive experience in JavaScript, and I specialize in frameworks like React.js and Next.js. My expertise lies in delivering high-quality, optimized code that caters to clients' needs and exceeds their expectations.
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative mb-10'>
@@ -57,7 +57,7 @@ export default function Home() {
       {/* image */}
       <div className="w-full h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <div className='bg-none xl:bg-wh dark:xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute dark:mix-blend-color-dodge translate-z-0'>
+        <div className='bg-wh dark:bg-explosion xl:bg-cover bg-center xl:bg-right xl:bg-no-repeat w-full h-full absolute dark:mix-blend-color-dodge translate-z-0'>
         </div>
         {/* particles */}
         <ParticlesContainer />

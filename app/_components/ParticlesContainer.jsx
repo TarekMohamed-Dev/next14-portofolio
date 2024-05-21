@@ -1,3 +1,4 @@
+// ParticlesContainer.jsx
 'use client'
 import React, { useCallback, useEffect, useState } from 'react';
 import { Particles } from 'react-tsparticles';
@@ -5,7 +6,8 @@ import { loadFull } from 'tsparticles';
 import { useTheme } from 'next-themes';
 
 const ParticlesContainer = () => {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [particleColor, setParticleColor] = useState('#151515');
   const [linkColor, setLinkColor] = useState('#A91D3A');
 
@@ -18,14 +20,19 @@ const ParticlesContainer = () => {
 
   // Update colors based on the current theme
   useEffect(() => {
-    if (theme === 'dark') {
+    if (theme === 'dark' || resolvedTheme === 'dark') {
       setParticleColor('#e68e2e');
       setLinkColor('#f5d393');
     } else {
       setParticleColor('#151515');
       setLinkColor('#A91D3A');
     }
-  }, [theme]);
+    setMounted(true);
+  }, [theme, resolvedTheme]);
+
+  if (!mounted) {
+    return null; // أو يمكنك عرض مؤقت تحميل هنا
+  }
 
   return (
     <div className="relative w-full h-full">

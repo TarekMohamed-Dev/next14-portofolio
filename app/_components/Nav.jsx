@@ -39,7 +39,7 @@ const Nav = () => {
       <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-black/10 dark:bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
         {navData.map((link, index) => (
           <Link key={index} href={link.path}>
-            <div className={`${link.path === currentPath && 'text-[#A91D3A] dark:text-accent'} relative flex items-center group hover:text-accent transition-all duration-300`}>
+            <div className={`${link.path === currentPath && 'text-accent'} relative flex items-center group hover:text-accent transition-all duration-300`}>
               {/* tooltip */}
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>

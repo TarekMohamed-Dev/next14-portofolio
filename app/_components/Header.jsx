@@ -1,34 +1,38 @@
-// next image
-import Image from 'next/image';
+'use client'
 
-// next link
-import Link from 'next/link';
-
-// components
+// import Image from 'next/image';
+// import Link from 'next/link';
 import Socials from '../_components/Socials';
-
 import { ModeToggle } from './toggleMenu';
-
-// next-themes
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null; // or a loading spinner
+  }
 
   return (
     <header className='absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8'>
           {/* logo */}
-          <Link href={'/'}>
+          {/* <Link href={'/'}>
             <Image
-              src={theme === 'dark' ? '/logolight.png' : '/logodark.png'}
+              src={theme === 'dark' || resolvedTheme === 'dark' ? '/logolight.png' : '/logodark.png'}
               width={190}
               height={70}
               alt='Logo'
               priority={true}
             />
-          </Link>
+          </Link> */}
           <div className='flex items-center gap-x-2'>
             {/* socials */}
             <Socials />
