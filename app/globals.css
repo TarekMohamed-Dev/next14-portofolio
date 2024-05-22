@@ -19,7 +19,7 @@
 }
 
 @layer base {
-  body {
+  html, body {
     @apply overflow-hidden leading-relaxed;
   }
   .page {
