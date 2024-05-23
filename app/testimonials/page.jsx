@@ -5,12 +5,12 @@ import TestimonialSlider from '../_components/TestimonialSlider'
 // framer motion
 import {motion} from 'framer-motion'
 import {fadeIn} from '../../variants'
-// import Transition from "../_components/Transition";
+import Transition from "../_components/Transition";
 
 const Testimonials = () => {
     return (
       <>
-      {/* <Transition /> */}
+      <Transition />
       <div className='h-full bg-primary/30 py-32 text-center'>
         <div className='container mx-auto h-full flex flex-col justify-center'>
           {/* title */}

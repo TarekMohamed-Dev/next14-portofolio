@@ -13,16 +13,16 @@ import { motion } from 'framer-motion'
 // variants
 import { fadeIn } from '../variants'
 
-// import Transition from "./_components/Transition";
+import Transition from "./_components/Transition";
 
 export default function Home() {
   return (
     <>
-      {/* <Transition /> */}
+      <Transition />
       <div className='dark:bg-primary/60 h-full relative'>
         {/* text */}
         <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 relative z-20'>
-          <div className='text-center flex flex-col justify-center pt-20 sm:pt-32 xl:text-left h-full container mx-auto'>
+          <div className='text-center flex flex-col justify-center pt-20 sm:pt-32 xl:text-left h-full container mx-auto h-screen'>
             {/* title */}
             <motion.h1
               variants={fadeIn('down', 0.2)}

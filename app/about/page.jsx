@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
-// import Transition from "../_components/Transition";
+import Transition from "../_components/Transition";
 
 // icons
 import {
@@ -96,7 +96,7 @@ const About = () => {
 
   return (
     <>
-      {/* <Transition /> */}
+      <Transition />
       <div className='relative h-full overflow-hidden py-32 text-center xl:text-left bg-[#e2e8f0] dark:bg-primary/30'>
         {/* Circles component */}
         <Circles />
