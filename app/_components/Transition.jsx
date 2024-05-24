@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const transitionVariants = {
   initial: {
-    x: '0%',
+    x: '100%',
     width: '100%',
   },
   animate: {
@@ -11,7 +11,8 @@ const transitionVariants = {
     width: '0%',
   },
   exit: {
-    x: '100%', width: '0%',
+    x: ['0%' , '100%'],
+    width: ['0%' , '100%'],
   },
 };
 
