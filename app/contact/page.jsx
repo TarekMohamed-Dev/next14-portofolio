@@ -28,7 +28,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className='h2 text-center mb-12'>Let's <span className='text-accent'>krconnect.</span></motion.h2>
+            className='h2 text-center mb-12'>Let's <span className='text-accent'>connect.</span></motion.h2>
             {/* form */}
             <form className='flex-1 flex flex-col gap-6 w-full'>
               {/* group */}
