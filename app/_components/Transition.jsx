@@ -24,7 +24,7 @@ const Transition = ({ children }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ duration: 0.8, ease: 'easeInOut' }}
+        transition={{delay: 0.4, duration: 0.8, ease: 'easeInOut' }}
         key="layer1"
       />
       <motion.div
@@ -33,7 +33,7 @@ const Transition = ({ children }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.2, duration: 0.8, ease: 'easeInOut' }}
+        transition={{ delay: 0.6, duration: 0.8, ease: 'easeInOut' }}
         key="layer2"
       />
       <motion.div
@@ -42,7 +42,7 @@ const Transition = ({ children }) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.4, duration: 0.8, ease: 'easeInOut' }}
+        transition={{ delay: 0.8, duration: 0.8, ease: 'easeInOut' }}
         key="layer3"
       />
       {children}
