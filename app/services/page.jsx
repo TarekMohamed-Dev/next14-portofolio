@@ -7,12 +7,12 @@ import Circles from '../_components/Circles'
 // framer motion
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
-import Transition from "../_components/Transition";
+// import Transition from "../_components/Transition";
 
 const Services = () => {
     return (
       <>
-        <Transition />
+        {/* <Transition /> */}
         <div className='h-full bg-primary/30 py-36 flex items-center'>
           <Circles />
           <div className='container mx-auto'>
