@@ -13,7 +13,8 @@ const Services = () => {
     return (
       <>
         {/* <Transition /> */}
-        <div className='h-full bg-primary/30 py-36 flex items-center'>
+        <div className='gradient absolute w-full  h-[20%] bg-accent/25 blur-[100px] left-[100px] top-0 z-10 ' />
+        <div className='bg-[#e2e8f0] dark:bg-primary/30 pt-36 flex items-center h-screen'>
           <Circles />
           <div className='container mx-auto'>
             <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -24,7 +25,7 @@ const Services = () => {
                  initial="hidden"
                  animate="show"
                  exit="hidden"
-                 className='h2 xl:mt-8'
+                 className='h2 xl:mt-8 text-black dark:text-white'
                 >
                   My services 
                   <span className='text-accent'>.</span>
@@ -34,8 +35,8 @@ const Services = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                 className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eveniet dignissimos distinctio tempore harum laudantium. Beatae perspiciatis mollitia animi quaerat?
+                 className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-black/80'>
+                 I specialize in developing responsive web applications with modern designs and efficient grid layouts. I enhance and optimize existing websites, making them user-friendly and visually appealing. Additionally, I create cutting-edge online stores and websites using the latest technologies.
                 </motion.p>
               </div>
               {/* slider */}

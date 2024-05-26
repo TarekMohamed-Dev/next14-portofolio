@@ -3,25 +3,25 @@
 // testimonial data
 const testimonialData = [
     {
-      image: '/t-avt-1.png',
-      name: 'Anne Smith',
+      image: '/1.webp',
+      name: 'Khaled Zohery',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'الله اكبر انا مشوفتش بورتفوليو بالجمال ده قبل كده بم الله ما شاء الله',
     },
     {
-      image: '/t-avt-2.png',
-      name: 'Jane Doe',
+      image: '/2.webp',
+      name: 'Omar Hassan',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'tarek mohamed has helped my team and I stay on the same page. Previously, we were all over the board. working with tarek mohamed has definitely saved us time and money.',
     },
     {
-      image: '/t-avt-3.png',
-      name: 'Jhon Doe',
+      image: '/3.webp',
+      name: 'Hamza',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        "it's perfect ماشاء الله عليك شغل ممتاز جدا بارك الله فيك"
     },
   ];
   
@@ -59,22 +59,22 @@ const testimonialData = [
                 <div className='flex flex-col justify-center text-center'>
                   {/* avatar */}
                   <div className='mb-2 mx-auto'>
-                    <Image src={person.image} width={100} height={100} alt='' />
+                    <Image src={person.image} width={100} height={100} alt=''  className='rounded-full'/>
                   </div>
                   {/* name */}
-                  <div className='text-lg'>{person.name}</div>
+                  <div className='text-lg text-[#284979] dark:text-white'>{person.name}</div>
                   {/* position */}
-                  <div className='text-[12px] uppercase font-extralight tracking-widest'>{person.position}</div>
+                  <div className='text-[12px] uppercase font-extralight tracking-widest text-gray-700 dark:text-white'>{person.position}</div>
                 </div>
               </div>
               {/* quote & message */}
               <div className='flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20'>
                 {/* quote icon */}
                 <div className='mb-4'>
-                  <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0' />
+                  <FaQuoteLeft className='text-4xl xl:text-6xl dark:text-white/20 mx-auto md:mx-0 text-[#284979]/20' />
                 </div>
                 {/* message */}
-                <div className='xl:text-lg text-center md:text-left'>{person.message}</div>
+                <div className='xl:text-lg text-center md:text-left text-gray-700 dark:text-white'>{person.message}</div>
               </div>
             </div>
           </SwiperSlide>
