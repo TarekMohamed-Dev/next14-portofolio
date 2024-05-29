@@ -44,7 +44,7 @@ const serviceData = [
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Optimizing your website to rank higher in search engine results and attract more traffic.',
+    description: 'Optimizing your website for higher search engine rankings and increased traffic.',
   },
 ];
 
@@ -67,9 +67,9 @@ const ServiceSlider = () => {
     >
       {serviceData.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="bg-[#65344f] dark:bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer dark:hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 z-30">
+          <div className="bg-gray-400 dark:bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer dark:hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 z-30">
             {/* icon */}
-            <div className='text-4xl text-[#d487b1] dark:text-accent mb-4'>{item.icon}</div>
+            <div className='text-4xl text-blue dark:text-accent mb-4'>{item.icon}</div>
             {/* title desc */}
             <div className='mb-8'>
               <div className='mb-2 text-lg'>{item.title}</div>
@@ -77,7 +77,7 @@ const ServiceSlider = () => {
             </div>
             {/* arrow */}
             <div className="text-3xl">
-              <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-[#d487b1] dark:group-hover:text-accent transition-all duration-300' />
+              <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-blue dark:group-hover:text-accent transition-all duration-300' />
             </div>
           </div>
         </SwiperSlide>

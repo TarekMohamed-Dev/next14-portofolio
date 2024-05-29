@@ -8,8 +8,8 @@ import { useTheme } from 'next-themes';
 const ParticlesContainer = () => {
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const [particleColor, setParticleColor] = useState('#151515');
-  const [linkColor, setLinkColor] = useState('#A91D3A');
+  const [particleColor, setParticleColor] = useState('#284979');
+  const [linkColor, setLinkColor] = useState('#587cB2');
 
   // Initialize particles
   const particlesInit = useCallback(async (engine) => {
@@ -24,14 +24,14 @@ const ParticlesContainer = () => {
       setParticleColor('#e68e2e');
       setLinkColor('#f5d393');
     } else {
-      setParticleColor('#151515');
-      setLinkColor('#A91D3A');
+      setParticleColor('#284979');
+      setLinkColor('#587cB2');
     }
     setMounted(true);
   }, [theme, resolvedTheme]);
 
   if (!mounted) {
-    return null; // أو يمكنك عرض مؤقت تحميل هنا
+    return null;
   }
 
   return (

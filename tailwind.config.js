@@ -31,6 +31,7 @@ module.exports = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
+        blue: '#284979',
       },
       backgroundImage: {
         wh: 'url("/bg-wh.jpg")',

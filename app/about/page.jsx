@@ -92,7 +92,7 @@ const About = () => {
         {/* Circles component */}
         <Circles />
         
-        <div className='gradient absolute w-full h-[50%] bg-accent/25 blur-[100px] left-[100px] top-60 ' />
+        <div className='gradient absolute w-full h-[50%] bg-blue/25 dark:bg-accent/25 blur-[100px] left-[100px] top-60 ' />
         
         {/* Avatar image */}
         <motion.div
@@ -114,7 +114,7 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.
+              className='h2'>Captivating <span className='text-blue dark:text-accent'>stories</span> birth magnificent designs.
             </motion.h2>
             <motion.p 
               variants={fadeIn('right', 0.4)}
@@ -136,7 +136,7 @@ const About = () => {
                 
                 {/* experience */}
                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-black/20 dark:after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-blue dark:text-accent mb-2'>
                     <CountUp start={0} end={3} duration={15} /> +
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
@@ -144,7 +144,7 @@ const About = () => {
                 
                 {/* clients */}
                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-black/20 dark:after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-blue dark:text-accent mb-2'>
                     <CountUp start={0} end={15} duration={15} /> +
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied clients</div>
@@ -152,7 +152,7 @@ const About = () => {
                 
                 {/* projects */}
                 <div className='relative flex-1 after:w-[1px] after:h-full after:bg-black/20 dark:after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-blue dark:text-accent mb-2'>
                     <CountUp start={0} end={45} duration={15} /> +
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
@@ -160,7 +160,7 @@ const About = () => {
                 
                 {/* awards */}
                 <div className='relative flex-1'>
-                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+                  <div className='text-2xl xl:text-4xl font-extrabold text-blue dark:text-accent mb-2'>
                     <CountUp start={0} end={4} duration={15} /> +
                   </div>
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Winning awards</div>
@@ -185,7 +185,7 @@ const About = () => {
                   key={itemIndex} 
                   className={`cursor-pointer capitalize xl:text-lg relative select-none
   after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0
-  ${index === itemIndex ? 'text-accent after:w-[100%] after:bg-accent dark:after:bg-accent after:transition-all after:duration-300' : 'after:bg-black dark:after:bg-white'}`}
+  ${index === itemIndex ? 'text-blue dark:text-accent after:w-[100%] after:bg-blue  dark:after:bg-accent after:transition-all after:duration-300' : 'after:bg-black dark:after:bg-white'}`}
 
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -203,7 +203,7 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className='flex gap-x-4'>
                     {item.icons?.map((icon, itemIndex) => (
-                      <div key={itemIndex} className='text-2xl dark:text-white'>{icon}</div>
+                      <div key={itemIndex} className='text-2xl text-blue/75 dark:text-white'>{icon}</div>
                     ))}
                   </div>
                 </div>

@@ -11,7 +11,7 @@ const Testimonials = () => {
     return (
       <>
       {/* <Transition /> */}
-      <div className='block dark:hidden gradient absolute w-full h-[50%] bg-[#d487b1]/50 blur-[100px] left-[100px] top-60 ' />
+      <div className='block dark:hidden gradient absolute w-full h-[50%] bg-blue/10 blur-[100px] left-[100px] top-60 ' />
       <div className='h-screen bg-[#e2e8f0] dark:bg-primary/30 py-32 text-center'>
         <div className='container mx-auto h-full flex flex-col justify-center'>
           {/* title */}
@@ -20,9 +20,9 @@ const Testimonials = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='h2 mb-8 xl:mb-0 text-[#284979] dark:text-white'>
+          className='h2 mb-8 xl:mb-0 text-black dark:text-white'>
             What clients 
-          <span className='text-[#d487b1] dark:text-accent'>say.</span>
+          <span className='text-blue dark:text-accent'>say.</span>
           </motion.h2>
           {/* slider */}
           <motion.div

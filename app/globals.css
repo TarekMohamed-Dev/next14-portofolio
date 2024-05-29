@@ -8,7 +8,7 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #d487b1;
+  background-color: #284979;
 }
 
 .dark .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -20,7 +20,7 @@
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #d487b1;
+  color: #284979;
 }
 
 .dark .swiper-button-next:after,
@@ -46,18 +46,18 @@
   p {
     @apply leading-[1.8] dark:text-white/60 font-light;
   }
-  .btn,
-  .input {
+  btn,
+  input {
     @apply h-[40px] sm:h-[45px] md:h-[50px] lg:h-[52px];
   }
-  .input {
+  input {
     @apply w-full rounded-lg pl-4 sm:pl-5 md:pl-6 capitalize;
   }
-  .input,
-  .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-[#d487b1] dark:focus:ring-accent border border-black/30 dark:border-white/20 placeholder:text-black/30 dark:placeholder:text-white/30 placeholder:font-light;
+  input,
+  textarea {
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-blue dark:focus:ring-accent border border-black/30 dark:border-white/20 placeholder:text-black/30 dark:placeholder:text-white/30 placeholder:font-light;
   }
-  .textarea {
-    @apply w-full h-[140px] sm:h-[160px] md:h-[180px] p-4 sm:p-5 md:p-6 capitalize rounded-lg resize-none;
+  textarea {
+    @apply  h-[80px] sm:h-[200px] p-4 sm:p-5 md:p-6 capitalize rounded-lg resize-none;
   }
 }

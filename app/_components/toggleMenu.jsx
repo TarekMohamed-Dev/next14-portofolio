@@ -14,7 +14,7 @@ export function ModeToggle() {
   return (
     <Button
       onClick={toggleTheme}
-      className="flex items-center justify-center w-10 h-10 p-2 bg-gray-200 dark:bg-gray-800 rounded-full transition-all duration-300"
+      className="flex items-center justify-center w-10 h-10 p-2 dark:bg-gray-200 bg-blue/70 rounded-full transition-all duration-300"
     >
       {theme === "dark" ? (
         <Sun className="text-yellow-500" />

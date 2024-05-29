@@ -13,8 +13,6 @@ const Work = () => {
     return (
       <>
         {/* <Transition /> */}
-        <div className='gradient absolute w-full sm:w-[20%] h-[20%] bg-accent/25 blur-[100px] left-[100px] top-32 sm:top-auto sm:bottom-32' />
-
 
         <div className='bg-[#e2e8f0] dark:bg-primary/30 pt-20 sm:pt-32 flex items-center h-screen'>
           <Circles />
@@ -30,7 +28,7 @@ const Work = () => {
                   className='h2 xl:mt-12 text-black dark:text-white'
                 >
                   My Work 
-                  <span className='text-accent'>.</span>
+                  <span className='text-blue dark:text-accent'>.</span>
                 </motion.h2>
                 <motion.p
                   variants={fadeIn('up', 0.4)}

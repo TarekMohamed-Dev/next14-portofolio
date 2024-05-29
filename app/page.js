@@ -29,7 +29,7 @@ export default function Home() {
               exit="hidden"
               className='h1 text-black dark:text-white'
             >
-              Transforming Ideas <br /> Into <span className='text-[#A91D3A] dark:text-accent'>Digital Reality</span>
+              Transforming Ideas <br /> Into <span className='text-[#284979] dark:text-accent'>Digital Reality</span>
             </motion.h1>
             {/* subtitle */}
             <motion.p 
