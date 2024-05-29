@@ -18,7 +18,7 @@ const Testimonials = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='h2 mb-8 xl:mb-0 text-black dark:text-white'>
+          className='h2 mb-12 xl:mb-0 text-black dark:text-white'>
             What clients 
           <span className='text-blue dark:text-accent'>say.</span>
           </motion.h2>
