@@ -92,7 +92,7 @@ const About = () => {
         {/* Circles component */}
         <Circles />
         
-        <div className='gradient absolute w-full h-[50%] bg-blue/25 dark:bg-accent/25 blur-[100px] left-[100px] top-60 ' />
+        <div className='gradient absolute w-full h-[50%] dark:bg-accent/25 blur-[100px] left-[100px] top-60 ' />
         
         {/* Avatar image */}
         <motion.div

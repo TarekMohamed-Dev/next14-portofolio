@@ -13,7 +13,7 @@ const Services = () => {
     return (
       <>
         {/* <Transition /> */}
-        <div className='bg-[#e2e8f0] dark:bg-primary/30 pt-20 flex items-center h-screen'>
+        <div className='bg-[#e2e8f0] dark:bg-primary/30 sm:pt-20 flex items-center h-screen'>
           <Circles />
           <div className='container mx-auto'>
             <div className='flex flex-col xl:flex-row gap-x-8'>

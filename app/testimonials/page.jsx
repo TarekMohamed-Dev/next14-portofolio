@@ -10,9 +10,7 @@ import {fadeIn} from '../../variants'
 const Testimonials = () => {
     return (
       <>
-      {/* <Transition /> */}
-      <div className='block dark:hidden gradient absolute w-full h-[50%] bg-blue/10 blur-[100px] left-[100px] top-60 ' />
-      <div className='h-screen bg-[#e2e8f0] dark:bg-primary/30 py-32 text-center'>
+      <div className='h-screen bg-[#e2e8f0] dark:bg-primary/30 sm:py-32 text-center'>
         <div className='container mx-auto h-full flex flex-col justify-center'>
           {/* title */}
           <motion.h2 
